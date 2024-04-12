@@ -15,3 +15,10 @@
 | SIEMS             | SIEMS (such as Splunk) are central points where data is analyzed, visualized, and used for alerting and forensic analysis.                            |
 
 
+## PDU
+On a wireshark capture :
+DATA =>  1 (from the bottom)
+Segment/datagram => 2
+Packet => 3
+Frame => 4
+Bit => 5
