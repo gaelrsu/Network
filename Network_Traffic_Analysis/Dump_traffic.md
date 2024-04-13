@@ -22,3 +22,10 @@ sudo apt install tcpdump
 | r file.pcap    | Read from a file.                                                                                          |
 | w file.pcap    | Write into a file.                                                                                         |
 
+
+
+
+
+
+
+
