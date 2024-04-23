@@ -22,6 +22,20 @@ sudo apt install tcpdump
 | r file.pcap    | Read from a file.                                                                                          |
 | w file.pcap    | Write into a file.                                                                                         |
 
+## Filters
+
+| Filter      | Result                                                                                      |
+|-------------|---------------------------------------------------------------------------------------------|
+| host        | Filters traffic involving the designated host (bi-directional).                             |
+| src / dest  | Modifiers to designate source or destination host or port.                                  |
+| net         | Shows traffic from or destined to the designated network (uses / notation).                |
+| proto       | Filters for a specific protocol type (e.g., ether, TCP, UDP, ICMP).                         |
+| port        | Shows traffic with the specified port as the source or destination (bi-directional).        |
+| portrange   | Specifies a range of ports (e.g., 0-1024).                                                   |
+| less / greater "< >" | Looks for packets or protocol options of a specific size.                                |
+| and / &&    | Concatenates two different filters together (e.g., src host AND port).                       |
+| or          | Matches on either of two conditions (does not have to meet both; can be tricky).             |
+| not         | Excludes traffic matching the specified condition (e.g., not UDP).                           |
 
 
 
