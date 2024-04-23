@@ -39,7 +39,7 @@ sudo apt install tcpdump
 | not         | Excludes traffic matching the specified condition (e.g., not UDP).                           |
 
 ### Exemple :
-'''
+```
 sudo tcpdump -i eth0 host 172.16.14.20
 sudo tcpdump -i eth0 src host 172.16.14.20
 sudo tcpdump -i eth0 tcp src port 53
@@ -47,8 +47,12 @@ sudo tcpdump -i eth0 proto 64003
 sudo tcpdump -i eth0 tcp port 443
 sudo tcpdump -i eth0 portrange 0-1024
 sudo tcpdump -i eth0 host 192.168.0.1 and port 23 or port 2300
-sudo tcpdump -r sus.pcap not icmp
-'''
+sudo tcpdump -r my.pcap not icmp
+sudo tcpdump -Ar my2.cap -l | grep 'mailto:*'
+sudo tcpdump -i eth0 'tcp[13] &2 != 0'     => looking for SYN
+```
+
+
 
 
 
