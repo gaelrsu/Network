@@ -37,7 +37,14 @@ sudo apt install tcpdump
 | or          | Matches on either of two conditions (does not have to meet both; can be tricky).             |
 | not         | Excludes traffic matching the specified condition (e.g., not UDP).                           |
 
-
+Exemple :
+'''
+sudo tcpdump -i eth0 host 172.16.14.20
+sudo tcpdump -i eth0 src host 172.16.14.20
+sudo tcpdump -i eth0 tcp src port 53
+sudo tcpdump -i eth0 proto 64003
+sudo tcpdump -i eth0 tcp port 443
+'''
 
 
 
